@@ -1,2 +1,2 @@
-# Thesis_AFajkusz_UvA_2024
-Thesis Work Repository of András Fajkusz
+# Thesis Work Master IS - DS track
+This repository contains all the important workfiles for the Thesis Work.
