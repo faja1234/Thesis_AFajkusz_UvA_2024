@@ -18,7 +18,7 @@ def semantic_loss(y_pred, y_true, rule, class_weight, sem_weight):
     loss = criterion(y_pred, y_true)
 
     # Calculate the rule-based penalty
-    rule_penalty = -torch.log(torch.sum((rule*y_pred)*(1-y_pred)))
+    rule_penalty = -torch.log(torch.sum(rule*y_pred))
 
     # Combine semantic loss and rule-based penalty
     total_loss = loss + sem_weight * rule_penalty
