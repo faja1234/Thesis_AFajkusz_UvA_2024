@@ -17,7 +17,6 @@ class LCDataset(data.Dataset):
 
     def __getitem__(self, idx):
         # Return the idx-th data point of the dataset
-        # If we have multiple things to return (data point and label), we can return them as tuple
         data_point = self.data[idx]
         data_label = self.label[idx]
         return data_point, data_label
